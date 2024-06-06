@@ -14,5 +14,10 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.btnGotoTwo.setOnClickListener{
+            val intent = Intent(this, TwoActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
